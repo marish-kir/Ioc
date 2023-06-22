@@ -10,6 +10,7 @@ private:
 public:
     Computer(IProcessor* processor);
     std::string GetProcessor();
+    ~Computer(){delete [] processor;}
 };
 
 #endif // COMPUTER_H
